@@ -15,7 +15,7 @@ class PortfolioController extends Controller
         return view('site.index', compact('portfolios'));
     }
     function pagina($id){
-        $registro = Projeto::find($id);
-        return view('site.single-project', compact('registro'));
+        $single = Projeto::find($id);
+        return view('site.single-project', compact('single'));
     }
 }

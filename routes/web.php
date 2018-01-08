@@ -32,6 +32,6 @@ Route::put('/admin/projetos/atualizar/{id}', ['as'=>'admin.atualizar.projeto', '
 
 
 //Contato
-Route::get('/admin/contatos', ['as'=>'admin.contatos', 'uses' => 'Admin\ContatoAdminController@index']);//Feito
+Route::get('/admin/contatos', ['as'=>'admin.contatos', 'uses' => 'admin\ContatoAdminController@index']);//Feito
 Route::get('/admin/contatos/apagar/{id}', ['as'=>'admin.contatos.apagar', 'uses' => 'admin\ContatoAdminController@deletar']);//Feito
 

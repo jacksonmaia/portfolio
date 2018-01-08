@@ -53,6 +53,27 @@
                                 </div>
 
                                 <div class="form-group ">
+                                    <label for="address" class="control-label col-lg-2"> Cliente <span class="required">*</span></label>
+                                    <div class="col-lg-10">
+                                        <input class=" form-control" id="address" name="cliente" type="text" value="{{$registro->cliente}}"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group ">
+                                    <label for="address" class="control-label col-lg-2"> Ano <span class="required">*</span></label>
+                                    <div class="col-lg-10">
+                                        <input class=" form-control" id="address" name="ano" type="number" value="{{$registro->ano}}"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group ">
+                                    <label for="address" class="control-label col-lg-2"> Url <span class="required">*</span></label>
+                                    <div class="col-lg-10">
+                                        <input class=" form-control" id="address" name="url" type="text" value="{{$registro->url}}"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group ">
                                     <label for="address" class="control-label col-lg-2"> Tags <span class="required">*</span></label>
                                     <div class="col-lg-10">
                                         <input class=" form-control" id="address" name="tag" type="text" value="{{$registro->tag}}"/>

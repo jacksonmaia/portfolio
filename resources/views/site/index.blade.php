@@ -187,7 +187,7 @@
                                             <ul class="info-list">
                                                 <li><span class="inf">Email</span>  <span class="value">jacksonmaia7@gmail.com</span></li>
                                                 <li><span class="inf">Telefone</span>  <span class="value"> +55 85 9 9219 5456	</span></li>
-                                                <li><span class="inf">Skype</span>  <span class="value">Carlose_Smith</span></li>
+                                                <li><span class="inf">Skype</span>  <span class="value">jacksonmaia2012</span></li>
                                             </ul>
 
                                         </div>
@@ -705,7 +705,7 @@
                         <!--Main title-->
 
                         <div class="main-title">
-                            <h1>my works</h1>
+                            <h1>Meus trabalhos</h1>
                             <div class="divider">
                                 <div class="zigzag large clearfix "  data-svg-drawing="yes" >
                                     <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -794,7 +794,7 @@
                                                                     <span>{{$portfolio->subTitulo}}</span></h3>
                                                             </div>
 
-                                                            <img alt="" src="{!! asset('img/portfolio/2.jpg') !!}"/>
+                                                            <img alt="" src="{!! asset($portfolio->imagem) !!}"/>
                                                         </a>
                                                     </div>
                                                     <!--End item-->
@@ -855,7 +855,7 @@
                         <!--Main title-->
 
                         <div class="main-title">
-                            <h1>map location</h1>
+                            <h1>Mapa de localização</h1>
                             <div class="divider">
                                 <div class="zigzag large clearfix "  data-svg-drawing="yes" >
                                     <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">

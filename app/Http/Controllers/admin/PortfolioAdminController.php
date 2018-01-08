@@ -26,6 +26,9 @@ class PortfolioAdminController extends Controller
             'subTitulo'=> 'required',
             'imagem'=> 'required',
             'descricao'=> 'required',
+            'cliente'=> 'required',
+            'ano'=> 'required',
+            'url'=> 'required',
             'tag'=> 'required',
             'class'=> 'required'
         ];

@@ -89,6 +89,24 @@
                                     </div>
                                 </div>
                                 <div class="form-group ">
+                                    <label for="address" class="control-label col-lg-2">Cliente <span class="required">*</span></label>
+                                    <div class="col-lg-10">
+                                        <input class=" form-control" id="address" name="cliente" type="text" />
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <label for="address" class="control-label col-lg-2">Ano <span class="required">*</span></label>
+                                    <div class="col-lg-10">
+                                        <input class=" form-control" id="address" name="ano" type="number" />
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <label for="address" class="control-label col-lg-2">URL <span class="required">*</span></label>
+                                    <div class="col-lg-10">
+                                        <input class=" form-control" id="address" name="url" type="text" />
+                                    </div>
+                                </div>
+                                <div class="form-group ">
                                     <label for="address" class="control-label col-lg-2">Tags <span class="required">*</span></label>
                                     <div class="col-lg-10">
                                             <div class="example example_markup">
@@ -134,5 +152,5 @@
 @include('admin.include.footer')
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="{{asset('js/Admin/bootstrap-tagsinput.min.js')}}"></script>
-<script src="{{asset('js/Admin/app.js')}}"></script>
+<script src="{{asset('js/admin/bootstrap-tagsinput.min.js')}}"></script>
+<script src="{{asset('js/admin/app.js')}}"></script>

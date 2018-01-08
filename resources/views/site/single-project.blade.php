@@ -36,7 +36,7 @@
                         <!--Main title-->
 
                         <div class="main-title work-title">
-                            <h1>Amazing Branding</h1>
+                            <h1>Projeto</h1>
                             <div class="divider">
                                 <div class="zigzag large clearfix "  data-svg-drawing="yes" >
                                     <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -58,52 +58,35 @@
                             <!--Block content-->
                             <div class="block-content ">
 
-
                                 <div class="block-nav-work margBottom">
 
                                     <ul>
-                                        <li><a href="#"><i class="icon-left-open-mini"></i></a></li>
-                                        <li><a href="index.html#portfolio"><i class="icon-cancel"></i></a></li>
-                                        <li><a href="#"><i class="icon-right-open-mini"></i></a></li>
+                                        <li><a href="{{route('menu.index')}}#portfolio"><i class="icon-cancel"></i></a></li>
                                     </ul>
                                 </div>
 
-
-
-
-
                                 <div class="block-single margBottom clearfix">
                                     <div class="col-md-10 col-md-offset-1">
-                                        <h1 class="large-title margBSSmall">Project
-                                            <br>Case Study</h1>
-                                        <p class="margBSSmall">Sed ut perspiciatis unde omnis iste natus error
-                                            sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                                            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                                            vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.Sed ut perspiciatis unde omnis iste natus error
-                                            sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                                            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                                            vitae dicta sunt explicabo. Nemo enim ipsam voluptatem. </p>
+                                        <h1 class="large-title margBSSmall">{{$single->titulo}}</h1>
+                                        <p class="margBSSmall">{{$single->descricao}}</p>
 
                                         <hr>
 
                                         <ul>
 
-                                            <li>Job :
-                                                <strong>Branding &amp; Development</strong>
+                                            <li>Tags :
+                                                <strong>{{$single->tag}}</strong>
                                             </li>
 
-                                            <li>Client :
-                                                <strong>Carlose Smith</strong>
+                                            <li>Cliente :
+                                                <strong>{{$single->cliente}}</strong>
                                             </li>
 
 
-                                            <li>Year :
-                                                <strong>Mars , 2015</strong>
+                                            <li>Ano :
+                                                <strong>{{$single->ano}}</strong>
                                             </li>
 
-                                            <li>Agency :
-                                                <strong>Mutation Media</strong>
-                                            </li>
                                         </ul>
 
                                     </div>
@@ -113,47 +96,9 @@
                                 <div class="block-single margBottom clearfix">
 
                                     <div class="col-md-10 col-md-offset-1">
-                                        <img src="{!! asset('img/portfolio/large-1.jpg') !!}" alt="">
+                                        <img src="{!! asset($single->imagem) !!}" alt="">
                                     </div>
                                 </div>
-
-
-                                <div class="block-single margBottom clearfix">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <img src="{!! asset('img/portfolio/large-2.jpg') !!}" alt="">
-                                    </div>
-                                </div>
-
-
-
-                                <div class="block-single margBottom clearfix">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <img src="{!! asset('img/portfolio/large-3.jpg') !!}" alt="">
-                                    </div>
-                                </div>
-
-
-                                <div class="block-single margBottom clearfix">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <img src="{!! asset('img/portfolio/large-4.jpg') !!}" alt="">
-                                    </div>
-                                </div>
-
-
-
-                                <div class="block-single margBottom clearfix">
-                                    <div class="col-md-10 col-md-offset-1">
-
-                                        <ul class="social tCenter">
-                                            <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                            <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                                        </ul>
-
-
-                                    </div>
-                                </div>
-
 
 
                             </div>
@@ -187,7 +132,7 @@
 
 
                                 <div class="col-md-12">
-                                    <a class="but opc-3 ico" href="#">view project online</a>
+                                    <a class="but opc-3 ico" href="{{$single->url}}">Ver projeto online</a>
 
                                 </div>
 
